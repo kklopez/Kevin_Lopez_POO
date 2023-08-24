@@ -2,7 +2,8 @@ package edu.kevin.reto1.process;
 
 /**
  * @author kevin
- * Esta clase contiene las logicas aritmetricas
+ * Esta clase contiene las logicas aritmetricas, suma,
+ * resta, multiplicacion, division, modulos.
  */
 public class Calculator {
     /**
