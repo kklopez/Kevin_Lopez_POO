@@ -5,6 +5,12 @@ import edu.kevin.reto1.process.Calculator;
 import java.util.Scanner;
 
 public class CLI{
+    /**
+     * En esta parte tenemos el menu para que el
+     * usuario puede ingresar el tipo de operacion
+     * que desea hacer para despues introducir los
+     * valores con los que se realizara la operacion.
+     */
     public static void showMenu(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Elige una opcion");
@@ -22,6 +28,12 @@ public class CLI{
         int num2= scanner.nextInt();
 
         switch(opcionMenu){
+            /**
+             * En este apartado se encuentran los case
+             * en ellos se encuentra las funciones que
+             * realizara una vez que el usuario seleccione
+             * la opcion
+             */
             case 1:
                 System.out.println(num1 + "+" + num2 + "+" + Calculator.sumaEnteros(num1,num2));
                 break;
