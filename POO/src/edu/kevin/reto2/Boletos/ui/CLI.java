@@ -19,13 +19,18 @@ public class CLI {
             double precio = maquina.calcularPrecioBoleto(opcion);
 
             if (precio > 0){
+                /** Esta parte del programa le muestra al usuario
+                 * el precio del boleto y si quiere volver a comprar
+                 * uno **/
                 System.out.println("El precio del boleto es: $" + precio);
                 System.out.println("¿Hay otro cliente que solicite un boleto? (S/N");
                 respuesta = scanner.next().charAt(0);
             } else{
                 respuesta = 'S';
             }
-        } while (respuesta == 'S' || respuesta == 's');
+
+        } while (respuesta == 'S' || respuesta == 's'); /** Esta parte del programa nos permite reiniciar el
+                                                         * proceso si la clave no es valida **/
 
         System.out.println("Gracias por tu compra. ¡Hasta luego!");
         scanner.close();
