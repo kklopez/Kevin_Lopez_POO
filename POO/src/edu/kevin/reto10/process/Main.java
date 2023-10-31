@@ -17,19 +17,23 @@ public class Main {
         OperacionesAritmeticas potencia = new Potencia();
         OperacionesAritmeticas raiz = new Raiz();
 
-        //Operaciones utilizando polimorfismo
-        System.out.println("Suma: " + ejecutarOperacion(suma, 5, 3));
-        System.out.println("Resta: " + ejecutarOperacion(resta, 5, 3));
-        System.out.println("Multiplicacion: " + ejecutarOperacion(multiplicacion, 5, 3));
-        System.out.println("Division: " + ejecutarOperacion(division, 5, 3));
-        System.out.println("Modulo: " + ejecutarOperacion(modulo, 5, 3));
-        System.out.println("Potencia: " + ejecutarOperacion(potencia, 2, 3));
-        System.out.println("Raiz: " + ejecutarOperacion(raiz,16, 0));
-        System.out.println("Que tenga buen dia :)");
-    }
+        double num1 = 10;
+        double num2 = 5;
 
-    //Metodo para ejecutar la operacion aritmetica
-    private static double ejecutarOperacion(OperacionesAritmeticas operaciones, double a, double b) {
-        return operaciones.calcular(a, b);
+        //Operaciones utilizando polimorfismo
+        System.out.println("Suma: " + suma.operar(num1, num2));
+        System.out.println("Resta: " + resta.operar(num1, num2));
+        System.out.println("Multiplicacion: " + multiplicacion.operar(num1, num2));
+        System.out.println("Division: " + division.operar(num1, num2));
+        System.out.println("Modulo: " + modulo.operar(num1, num2));
+
+        double base = 2;
+        double exponente = 3;
+        System.out.println("Potencia: " + potencia.operar(base, exponente));
+
+        double radicando = 9;
+        double indiceRaiz = 2;
+        System.out.println("Raiz: " + raiz.operar(radicando, indiceRaiz));
+        System.out.println("Que tenga buen dia :)");
     }
 }

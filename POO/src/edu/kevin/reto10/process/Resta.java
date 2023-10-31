@@ -3,7 +3,7 @@ package edu.kevin.reto10.process;
 class Resta extends OperacionesAritmeticas {
     //Clase para la operacion resta
     @Override
-    double calcular(double a, double b){
-        return a - b;
+   public double operar(double num1, double num2) {
+        return num1 - num2;
     }
 }
