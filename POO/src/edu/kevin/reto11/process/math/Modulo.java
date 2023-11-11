@@ -1,7 +1,7 @@
-package edu.kevin.reto11.process;
+package edu.kevin.reto11.process.math;
 
-public class Division extends OperacionesAritmeticas {
-    //Clase para la operacion division
+public class Modulo extends OperacionesAritmeticas {
+    //Clase para las operaciones modulo
     @Override
     public double operar(double num1, double num2) {
         if (num2 == 0) {
@@ -9,11 +9,9 @@ public class Division extends OperacionesAritmeticas {
             return 0;
         }
 
-        double resultado = 0;
         while (num1 >= num2) {
             num1 = new Resta().operar(num1, num2);
-            resultado = new Suma().operar(resultado, 1);
         }
-        return resultado;
+        return num1;
     }
 }

@@ -1,39 +1,41 @@
-package edu.kevin.reto11.iu;
+package edu.kevin.reto11.process.lang;
 
-public class Portugues extends Idioma{
-    //Clase para el idioma Portugues
+import edu.kevin.reto11.process.lang.Idioma;
+
+public class Ingles extends Idioma {
+    //Clase para el idioma Ingles
     @Override
     public String suma() {
-        return "Soma";
+        return "Sum";
     }
 
     @Override
     public String resta() {
-        return "Subtracao";
+        return "Subtract";
     }
 
     @Override
     public String multiplicacion() {
-        return "Multiplicacao";
+        return "Multiply";
     }
 
     @Override
     public String division() {
-        return "Divisao";
+        return "Divide";
     }
 
     @Override
     public String modulo() {
-        return "Modulo";
+        return "Modulus";
     }
 
     @Override
     public String potencia() {
-        return "Potencia";
+        return "Power";
     }
 
     @Override
     public String raiz() {
-        return "Raiz Quadrada";
+        return "Square Root";
     }
 }

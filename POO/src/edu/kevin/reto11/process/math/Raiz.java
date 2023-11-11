@@ -1,4 +1,8 @@
-package edu.kevin.reto11.process;
+package edu.kevin.reto11.process.math;
+
+import edu.kevin.reto11.process.math.Division;
+import edu.kevin.reto11.process.math.OperacionesAritmeticas;
+import edu.kevin.reto11.process.math.Suma;
 
 public class Raiz extends OperacionesAritmeticas {
     //Clase para la operacion raiz

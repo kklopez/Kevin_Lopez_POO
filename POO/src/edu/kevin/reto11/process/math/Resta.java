@@ -1,4 +1,4 @@
-package edu.kevin.reto11.process;
+package edu.kevin.reto11.process.math;
 
 public class Resta extends OperacionesAritmeticas {
     //Clase para la operacion resta
